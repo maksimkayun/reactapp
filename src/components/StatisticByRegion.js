@@ -41,9 +41,8 @@ export class StatisticByRegion extends Component {
             : this.reportTable(this.state.report);
 
         return (
-            <div>
-                <h1 id="tabelLabel" >Report</h1>
-                <p>This component demonstrates fetching data from the server.</p>
+            <div align={'center'}>
+                <h1 id="tabelLabel" >Report by region: {this.state.isoparam}</h1>
                 {contents}
             </div>
         );

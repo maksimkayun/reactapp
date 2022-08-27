@@ -15,7 +15,7 @@ const Region = (region) => {
             <div className={'ul_region'}>
                 ISO: {region.region.iso}<br/>
                 Name: {region.region.name}<br/>
-                <NavLink className={setNavStyle} to={"/statistic/" + region.region.iso} >Count of cases</NavLink>
+                <NavLink className={setNavStyle} to={"/statistic/" + region.region.iso}>Count of cases</NavLink>
             </div>
 
         </>

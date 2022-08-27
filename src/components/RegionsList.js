@@ -12,6 +12,7 @@ const RegionsList = () => {
             });
     }, []);
 
+
     return (
         <>
             <h3>Regions</h3>
