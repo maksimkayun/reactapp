@@ -1,6 +1,7 @@
 import Statistic from "./Statistic";
 import {Component, useEffect, useState} from "react";
 import {useLocation, useParams} from "react-router-dom";
+import './NavMenu.css';
 
 function withParams(Component) {
     return props => <Component {...props} params={useParams()} />;
@@ -14,16 +15,21 @@ export class StatisticByRegion extends Component {
 
     reportTable(report) {
         return (
-            <table className='table table-striped' aria-labelledby="tabelLabel">
+            <table className='table' aria-labelledby="tabelLabel">
                 <thead>
                 <tr>
                     <th>Date</th>
+                    <th>Confirmed</th>
+                    <th>Deaths</th>
                 </tr>
                 </thead>
                 <tbody>
-                    <tr key={report.data.date}>
-                        <td>{report.data.date}</td>
-                    </tr>
+                <tr key={report.data.date}>
+                    <td>{report.data.date}</td>
+                    <td>{report.data.confirmed}</td>
+                    <td>{report.data.deaths}</td>
+                </tr>
+
                 </tbody>
             </table>
         );

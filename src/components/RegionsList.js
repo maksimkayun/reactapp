@@ -15,9 +15,9 @@ const RegionsList = () => {
     return (
         <>
             <h3>Regions</h3>
-            <ul className={'ul_region'}>
+            <div className={'ul_region'}>
                 {regions.map(r => <Region key={r.name} region={r}/>)}
-            </ul>
+            </div>
         </>
     )
 }

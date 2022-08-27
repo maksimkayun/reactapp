@@ -12,11 +12,11 @@ const Region = (region) => {
     return (
         <>
             <h2>Region</h2>
-            <ul className={'ul_region'}>
-                <li>ISO: {region.region.iso}</li>
-                <li>Name: {region.region.name}</li>
+            <div className={'ul_region'}>
+                ISO: {region.region.iso}<br/>
+                Name: {region.region.name}<br/>
                 <NavLink className={setNavStyle} to={"/statistic/" + region.region.iso} >Count of cases</NavLink>
-            </ul>
+            </div>
 
         </>
     );

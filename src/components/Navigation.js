@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import styles from './Navigation.module.css';
+import './NavMenu.css';
 
 export default function Navigation() {
     const setNavStyle = ({isActive}) => {
@@ -10,20 +11,19 @@ export default function Navigation() {
 
     return (
         <nav>
-            <ul>
-                <li><NavLink className={setNavStyle} to="/" ><em>Home</em></NavLink></li>
-
-                <li>
-                    <NavLink
-                        to="/regions"
-                        // style={({isActive}) => ({
-                        //     background: isActive ? 'blue' : 'lightgray'
-                        // })}
-                        className={setNavStyle}>
-                        Regions
-                    </NavLink>
-                </li>
-            </ul>
+            <div>
+                <NavLink className={setNavStyle} to="/" ><em>Home</em></NavLink>
+            </div>
+            <div>
+                <NavLink
+                    to="/regions"
+                    // style={({isActive}) => ({
+                    //     background: isActive ? 'blue' : 'lightgray'
+                    // })}
+                    className={setNavStyle}>
+                    Regions
+                </NavLink>
+            </div>
         </nav>
     );
 }
