@@ -1,2 +1,4 @@
-
-
+img {
+    display: inline-flex;
+    max-width: 40em;
+}

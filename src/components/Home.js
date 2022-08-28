@@ -1,4 +1,5 @@
 import {useState} from "react";
+import "./home.css"
 
 const Home = () => {
     const [hover, setHover] = useState(false); // initial false

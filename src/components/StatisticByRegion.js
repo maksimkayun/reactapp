@@ -29,7 +29,6 @@ export class StatisticByRegion extends Component {
                     <td>{report.data.confirmed}</td>
                     <td>{report.data.deaths}</td>
                 </tr>
-
                 </tbody>
             </table>
         );
