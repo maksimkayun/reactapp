@@ -1,6 +1,5 @@
-import Statistic from "./Statistic";
-import {Component, useEffect, useState} from "react";
-import {useLocation, useParams} from "react-router-dom";
+import { Component } from "react";
+import { useParams} from "react-router-dom";
 import './NavMenu.css';
 
 function withParams(Component) {
@@ -68,44 +67,5 @@ export class StatisticByRegion extends Component {
             });
     }
 }
-
-// const StatisticByRegion = () => {
-//     const { iso } = useParams();
-//     this.state({report:{}, loading: true});
-//     const navigate = useLocation();
-//
-//     let now = new Date();
-//     let day = now.getUTCDate() < 10 ? `0${now.getUTCDate()}` : now.getUTCDate();
-//     let month = now.getUTCMonth() < 10 ? `0${now.getUTCMonth()}` : now.getUTCMonth();
-//     let year = now.getFullYear();
-//
-//     let request = `https://covid-api.com/api/reports/total?date=${year}-${month}-${day}&iso=${iso}`;
-//     console.log(request);
-//     useEffect(() => {
-//         const response = fetch(request);
-//         const data = response.json();
-//         this.setState({ report: data, loading: false });
-//     }, [navigate]);
-//     console.log(this.);
-//
-//     return(
-//
-//             <table className='table table-striped' aria-labelledby="tabelLabel">
-//                 <thead>
-//                 <tr>
-//                     <th>Date</th>
-//
-//                 </tr>
-//                 </thead>
-//                 <tbody>
-//                 {totalReport.map(r =>
-//                     <tr key={r.date}>
-//                         <td>{r.date}</td>
-//                     </tr>
-//                 )}
-//                 </tbody>
-//             </table>
-//     );
-// }
 
 export default withParams(StatisticByRegion);

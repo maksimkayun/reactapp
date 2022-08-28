@@ -1,5 +1,4 @@
 import { Link, NavLink } from 'react-router-dom';
-import StatisticByRegion from "./StatisticByRegion";
 import styles from "./Navigation.module.css";
 import "./NavMenu.css";
 

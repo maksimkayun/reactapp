@@ -26,7 +26,7 @@ const RegionsList = () => {
                 setRegions(result.data);
                 setNext(result.next_page_url);
                 setprev(result.prev_page_url);
-            }).catch(err => {  })
+            }).catch();
     }, [navigate]);
 
     function nextClick(event) {
